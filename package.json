@@ -1,0 +1,35 @@
+{
+  "name": "hello-mobx",
+  "version": "1.0.0",
+  "description": "Hello MobX ( with React )",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloerina01/hello-mobx.git"
+  },
+  "keywords": [
+    "react",
+    "MobX"
+  ],
+  "author": "aloerina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloerina01/hello-mobx/issues"
+  },
+  "homepage": "https://github.com/aloerina01/hello-mobx#readme",
+  "dependencies": {
+    "mobx": "^4.2.1",
+    "mobx-react": "^5.1.2",
+    "react": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "webpack": "^4.8.3"
+  }
+}

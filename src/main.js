@@ -1,18 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import mobx from 'mobx';
 // import Provider from 'mobx-react';
-import HelloWorld from './HelloWorld';
-import MessageStore from './MessageStore';
+import HelloWorld from './components/HelloWorld';
+import CountButton from './components/CountButton';
+import MessageStore from './models/MessageStore';
+import CountStore from './models/CountStore';
 
-mobx.useStrict(true);
-
-// const stores = {
-//   messageStore: new MessageStore()
-// }
 const messageStore = new MessageStore();
+const countStore = new CountStore();
 
-ReactDOM.render(
-  <HelloWorld message={messageStore.message} />,
+render(
+  <div>
+    <HelloWorld store={messageStore} />
+    <CountButton store={countStore} />
+  </div>,
   document.getElementById('app')
 );

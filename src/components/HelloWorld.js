@@ -1,4 +1,4 @@
 import React from 'react';
-import { observer } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 
-export default observer(({store}) => <h1>Hello {store.message} !!</h1>);
+export default inject('messageStore')(observer(({messageStore}) => <h1>Hello {messageStore.message} !!</h1>));

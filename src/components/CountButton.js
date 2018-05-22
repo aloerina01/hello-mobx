@@ -1,6 +1,7 @@
 import React from 'react';
-import { observer } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 
+@inject('countStore')
 @observer
 export default class CountButton extends React.Component {
     render() {

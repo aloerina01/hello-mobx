@@ -7,8 +7,8 @@ export default class CountButton extends React.Component {
     render() {
         return (
         <div>
-            <button type="text" onClick={() => this.props.store.increment()}>countUp</button>
-            <h3>count: {this.props.store.count}</h3>
+            <button type="text" onClick={() => this.props.countStore.increment()}>countUp</button>
+            <h3>count: {this.props.countStore.count}</h3>
         </div>);
     }
 }

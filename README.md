@@ -12,3 +12,9 @@ Hello MobX ( with React )
 - observableな要素の形をいろいろ想定しているのがいい
     - 「vuexの場合配列は変更をいい感じに検知できない」みたいなのがなさそう
 - https://github.com/mobxjs/mobx/issues/1082 にぶち当たった
+    - vscodeが勝手に別のものをimportしていただけ…
+- arrayをobservableにする
+    - `observable.array()`, `observable([])`, `observable.array([])` どれでもできた
+    - `observable()`は引数の型をみて適切な型のobservableをつくる感じかな？
+    - `observable.array()`は空の配列型のobservableをつくる
+    - `observable.array()`は引数の配列をBaseにできる

@@ -12,8 +12,8 @@ export default class ContentListView extends React.Component {
             <section>
                 <h3>contents</h3>
                 <ul>
-                    {this.props.contentList.contents.map(each => {
-                        <li><a target="_blank" href={each.url}>{each.title}</a></li>
+                    {this.props.contentList.contents.map((each, i) => {
+                        return <li key={`cl_${i}`}><a target="_blank" href={each.url}>{each.title}</a></li>
                     })}
                 </ul>
             </section>

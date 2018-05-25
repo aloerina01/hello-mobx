@@ -48,8 +48,8 @@ class ProfileComponent<T extends Profile> {
   setProps(value: T): void {
     this.props = value;
   }
-  get userName(): String {
-    return this.props.userName;
+  get props(): T {
+    return props;
   }
 }
 

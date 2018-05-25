@@ -51,6 +51,7 @@ class ProfileComponent<T extends Profile> {
   get props(): T {
     return props;
   }
+  mount(): void {/** 省略 */}
 }
 
 class UserProfile extends Profile {

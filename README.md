@@ -12,3 +12,15 @@ Hello MobX ( with React )
 - observableな要素の形をいろいろ想定しているのがいい
     - 「vuexの場合配列は変更をいい感じに検知できない」みたいなのがなさそう
 - https://github.com/mobxjs/mobx/issues/1082 にぶち当たった
+- vscodeがDecoratorに対してアラート上げてくる(怒)ときは`jsconfig.json`をつくるといい
+
+```js
+// jsconfig.json
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+    }
+}
+```
+
+- 

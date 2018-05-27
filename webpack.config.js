@@ -1,4 +1,5 @@
 const path = require('path');
+const WebpackBar = require('webpackbar');
 
 const MODE = process.env.NODE_ENV;
 
@@ -17,5 +18,9 @@ module.exports = {
         use: 'babel-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new WebpackBar()
+  ],
+  devtool: 'inline-source-map',
 }

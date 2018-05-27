@@ -1,9 +1,11 @@
+// @flow
+
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 
 @inject('countStore')
 @observer
-export default class CountButton extends React.Component {
+export default class CountButton extends React.Component<{countStore?: CountStore}> {
     render() {
         return (
         <div>
